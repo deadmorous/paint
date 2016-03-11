@@ -13,13 +13,14 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        widget.cpp \
     mainwindow.cpp \
-    colorpickeraction.cpp
+    colorpickeraction.cpp \
+    canvas.cpp
 
-HEADERS  += widget.h \
+HEADERS  += \
     mainwindow.h \
-    colorpickeraction.h
+    colorpickeraction.h \
+    canvas.h
 
 RESOURCES += \
     main.qrc

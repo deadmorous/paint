@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 
-class Widget;
+class Canvas;
 
 class MainWindow : public QMainWindow
 {
@@ -16,7 +16,7 @@ signals:
 public slots:
 
 private:
-    Widget *m_canvas;
+    Canvas *m_canvas;
 };
 
 #endif // MAINWINDOW_H

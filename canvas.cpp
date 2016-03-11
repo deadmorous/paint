@@ -1,4 +1,4 @@
-#include "widget.h"
+#include "canvas.h"
 
 //#include <QVBoxLayout>
 //#include <QHBoxLayout>
@@ -7,7 +7,7 @@
 #include <QResizeEvent>
 #include <QMouseEvent>
 
-Widget::Widget(QWidget *parent)
+Canvas::Canvas(QWidget *parent)
     : QWidget(parent),
       m_brushColor(Qt::black)
 {
@@ -30,28 +30,28 @@ Widget::Widget(QWidget *parent)
 //    connect(aQuit, SIGNAL(triggered()), this, SLOT(close()));
 }
 
-QSize Widget::sizeHint() const
+QSize Canvas::sizeHint() const
 {
     return QSize(600, 400);
 }
 
-QColor Widget::brushColor() const
+QColor Canvas::brushColor() const
 {
     return m_brushColor;
 }
 
-void Widget::setBrushColor(QColor c)
+void Canvas::setBrushColor(QColor c)
 {
     m_brushColor = c;
 }
 
-void Widget::paintEvent(QPaintEvent *)
+void Canvas::paintEvent(QPaintEvent *)
 {
     QPainter p(this);
     p.drawPixmap(0, 0, m_pix);
 }
 
-void Widget::resizeEvent(QResizeEvent *e)
+void Canvas::resizeEvent(QResizeEvent *e)
 {
     QPixmap newPix(e->size());
     {
@@ -63,16 +63,16 @@ void Widget::resizeEvent(QResizeEvent *e)
     m_pix = newPix;
 }
 
-void Widget::mousePressEvent(QMouseEvent *e)
+void Canvas::mousePressEvent(QMouseEvent *e)
 {
     m_lastPos = e->pos();
 }
 
-void Widget::mouseReleaseEvent(QMouseEvent *e)
+void Canvas::mouseReleaseEvent(QMouseEvent *e)
 {
 }
 
-void Widget::mouseMoveEvent(QMouseEvent *e)
+void Canvas::mouseMoveEvent(QMouseEvent *e)
 {
     QPainter p(&m_pix);
     QPen pen(m_brushColor, 18);

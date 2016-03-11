@@ -1,15 +1,15 @@
-#ifndef WIDGET_H
-#define WIDGET_H
+#ifndef CANVAS_H
+#define CANVAS_H
 
 #include <QWidget>
 #include <QPixmap>
 
-class Widget : public QWidget
+class Canvas : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit Widget(QWidget *parent = 0);
+    explicit Canvas(QWidget *parent = 0);
     QSize sizeHint() const;
 
     QColor brushColor() const;
@@ -30,4 +30,4 @@ private:
     QColor m_brushColor;
 };
 
-#endif // WIDGET_H
+#endif // CANVAS_H

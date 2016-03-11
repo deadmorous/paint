@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "widget.h"
+#include "canvas.h"
 #include "colorpickeraction.h"
 #include <QToolBar>
 #include <QIcon>
@@ -7,7 +7,7 @@
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    m_canvas(new Widget)
+    m_canvas(new Canvas)
 {
     QToolBar *tbr = addToolBar(tr("Tools"));
     // QAction *a;
