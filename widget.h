@@ -13,6 +13,8 @@ public:
     QSize sizeHint() const;
 
     QColor brushColor() const;
+
+public slots:
     void setBrushColor(QColor c);
 
 protected:
