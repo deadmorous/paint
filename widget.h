@@ -20,6 +20,7 @@ protected:
 
 private:
     QPixmap m_pix;
+    QPoint m_lastPos;
 };
 
 #endif // WIDGET_H

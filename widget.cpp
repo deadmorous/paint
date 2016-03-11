@@ -40,13 +40,19 @@ void Widget::paintEvent(QPaintEvent *)
 
 void Widget::resizeEvent(QResizeEvent *e)
 {
-    m_pix = QPixmap(e->size());
-    QPainter p(&m_pix);
-    p.fillRect(m_pix.rect(), Qt::white);
+    QPixmap newPix(e->size());
+    {
+        QPainter p(&newPix);
+        p.fillRect(newPix.rect(), Qt::white);
+        if (!m_pix.isNull())
+            p.drawPixmap(0, 0, m_pix);
+    }
+    m_pix = newPix;
 }
 
 void Widget::mousePressEvent(QMouseEvent *e)
 {
+    m_lastPos = e->pos();
 }
 
 void Widget::mouseReleaseEvent(QMouseEvent *e)
@@ -56,10 +62,12 @@ void Widget::mouseReleaseEvent(QMouseEvent *e)
 void Widget::mouseMoveEvent(QMouseEvent *e)
 {
     QPainter p(&m_pix);
-    p.setPen(Qt::NoPen);
-    p.setBrush(Qt::green);
+    QPen pen(Qt::green, 18);
+    pen.setCapStyle(Qt::RoundCap);
+    p.setPen(pen);
     p.setRenderHint(QPainter::Antialiasing);
-    p.drawEllipse(e->pos(), 9, 9);
+    p.drawLine(m_lastPos, e->pos());
     update();
+    m_lastPos = e->pos();
 }
 
