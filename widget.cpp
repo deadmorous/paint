@@ -1,17 +1,15 @@
 #include "widget.h"
 
-#include <QVBoxLayout>
-#include <QHBoxLayout>
+//#include <QVBoxLayout>
+//#include <QHBoxLayout>
 #include <QLabel>
-#include <QToolBar>
-#include <QIcon>
-#include <QAction>
 #include <QPainter>
 #include <QResizeEvent>
 #include <QMouseEvent>
 
 Widget::Widget(QWidget *parent)
-    : QWidget(parent)
+    : QWidget(parent),
+      m_brushColor(Qt::black)
 {
 
 //    QToolBar *w1 = new QToolBar;
@@ -30,6 +28,21 @@ Widget::Widget(QWidget *parent)
 //    vl->addWidget(w3);
 
 //    connect(aQuit, SIGNAL(triggered()), this, SLOT(close()));
+}
+
+QSize Widget::sizeHint() const
+{
+    return QSize(600, 400);
+}
+
+QColor Widget::brushColor() const
+{
+    return m_brushColor;
+}
+
+void Widget::setBrushColor(QColor c)
+{
+    m_brushColor = c;
 }
 
 void Widget::paintEvent(QPaintEvent *)
@@ -62,7 +75,7 @@ void Widget::mouseReleaseEvent(QMouseEvent *e)
 void Widget::mouseMoveEvent(QMouseEvent *e)
 {
     QPainter p(&m_pix);
-    QPen pen(Qt::green, 18);
+    QPen pen(m_brushColor, 18);
     pen.setCapStyle(Qt::RoundCap);
     p.setPen(pen);
     p.setRenderHint(QPainter::Antialiasing);

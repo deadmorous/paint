@@ -10,6 +10,10 @@ class Widget : public QWidget
 
 public:
     explicit Widget(QWidget *parent = 0);
+    QSize sizeHint() const;
+
+    QColor brushColor() const;
+    void setBrushColor(QColor c);
 
 protected:
     void paintEvent(QPaintEvent *);
@@ -21,6 +25,7 @@ protected:
 private:
     QPixmap m_pix;
     QPoint m_lastPos;
+    QColor m_brushColor;
 };
 
 #endif // WIDGET_H
