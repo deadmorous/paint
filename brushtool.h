@@ -13,6 +13,8 @@ public:
     QAction *toolAction();
     QWidget *toolSetupWidget();
 
+    DECL_PAINT_TOOL_GENERATOR(BrushTool)
+
 private:
     QAction *m_toolAction;
     QWidget *m_toolSetupWidget;

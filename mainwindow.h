@@ -16,10 +16,12 @@ signals:
 
 public slots:
 
+private slots:
+    void activateTool(QObject *tool);
+
 private:
     Canvas *m_canvas;
-    PaintTool *m_brushTool;
-    PaintTool *m_textTool;
+    PaintTool *m_currentTool;
 };
 
 #endif // MAINWINDOW_H

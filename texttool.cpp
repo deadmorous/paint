@@ -19,3 +19,5 @@ QWidget *TextTool::toolSetupWidget()
 {
     return m_toolSetupWidget;
 }
+
+DECL_PAINT_TOOL_REGISTRATOR(TextTool)

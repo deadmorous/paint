@@ -2,6 +2,7 @@
 
 #include <QAction>
 #include <QIcon>
+#include "registry.h"
 
 BrushTool::BrushTool(QObject *parent) :
     PaintTool(parent)
@@ -19,3 +20,5 @@ QWidget *BrushTool::toolSetupWidget()
 {
     return m_toolSetupWidget;
 }
+
+DECL_PAINT_TOOL_REGISTRATOR(BrushTool)

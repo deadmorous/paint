@@ -27,7 +27,8 @@ HEADERS  += \
     canvas.h \
     painttool.h \
     brushtool.h \
-    texttool.h
+    texttool.h \
+    registry.h
 
 RESOURCES += \
     main.qrc
