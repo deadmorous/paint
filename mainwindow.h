@@ -4,6 +4,7 @@
 #include <QMainWindow>
 
 class Canvas;
+class PaintTool;
 
 class MainWindow : public QMainWindow
 {
@@ -17,6 +18,8 @@ public slots:
 
 private:
     Canvas *m_canvas;
+    PaintTool *m_brushTool;
+    PaintTool *m_textTool;
 };
 
 #endif // MAINWINDOW_H

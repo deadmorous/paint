@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+CONFIG += c++11
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -15,12 +16,18 @@ TEMPLATE = app
 SOURCES += main.cpp\
     mainwindow.cpp \
     colorpickeraction.cpp \
-    canvas.cpp
+    canvas.cpp \
+    painttool.cpp \
+    brushtool.cpp \
+    texttool.cpp
 
 HEADERS  += \
     mainwindow.h \
     colorpickeraction.h \
-    canvas.h
+    canvas.h \
+    painttool.h \
+    brushtool.h \
+    texttool.h
 
 RESOURCES += \
     main.qrc
