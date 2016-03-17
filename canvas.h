@@ -28,6 +28,23 @@ private:
     QPixmap m_pix;
     QPoint m_lastPos;
     QColor m_brushColor;
+    friend class CanvasPixmap;
+};
+
+class CanvasPixmap
+{
+public:
+    explicit CanvasPixmap(Canvas *canvas) :
+        pix(canvas->m_pix),
+        m_canvas(canvas)
+    {}
+    ~CanvasPixmap() {
+        m_canvas->update();
+    }
+
+    QPixmap& pix;
+private:
+    Canvas *m_canvas;
 };
 
 #endif // CANVAS_H
