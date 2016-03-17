@@ -5,6 +5,7 @@
 #include <QToolBar>
 #include <QIcon>
 #include <QAction>
+#include <QActionGroup>
 #include <QSignalMapper>
 #include <QHBoxLayout>
 
@@ -14,16 +15,19 @@ MainWindow::MainWindow(QWidget *parent) :
     m_currentTool(nullptr)
 {
     m_tbr = addToolBar(tr("Tools"));
-    // QAction *a;
 
-    QSignalMapper *toolSignalMapper = new QSignalMapper(this);
+    auto toolActionGroup = new QActionGroup(this);
+
+    auto toolSignalMapper = new QSignalMapper(this);
     connect(toolSignalMapper, SIGNAL(mapped(QObject*)), SLOT(activateTool(QObject*)));
     QList<PaintTool*> paintTools;
     foreach (PaintTool::Generator g, PaintToolRegistry::generators()) {
         PaintTool *tool = g(this);
         paintTools << tool;
         QAction *toolAction = tool->toolAction();
+        toolAction->setCheckable(true);
         m_tbr->addAction(toolAction);
+        toolActionGroup->addAction(toolAction);
         toolSignalMapper->setMapping(toolAction, tool);
         connect(toolAction, SIGNAL(triggered(bool)), toolSignalMapper, SLOT(map()));
     }
