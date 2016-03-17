@@ -8,6 +8,7 @@ class ColorPickerAction : public QAction
 Q_OBJECT
 public:
     explicit ColorPickerAction(QObject *parent = NULL);
+    QColor color() const;
 
 signals:
     void colorPicked(QColor color);

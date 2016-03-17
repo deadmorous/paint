@@ -1,35 +1,43 @@
 #include "mainwindow.h"
 #include "canvas.h"
-#include "colorpickeraction.h"
 #include "painttool.h"
 
 #include <QToolBar>
 #include <QIcon>
 #include <QAction>
 #include <QSignalMapper>
+#include <QHBoxLayout>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     m_canvas(new Canvas),
     m_currentTool(nullptr)
 {
-    QToolBar *tbr = addToolBar(tr("Tools"));
+    m_tbr = addToolBar(tr("Tools"));
     // QAction *a;
-
-    ColorPickerAction *pickColorAction = new ColorPickerAction(this);
-    tbr->addAction(pickColorAction);
-    connect(pickColorAction, SIGNAL(colorPicked(QColor)),
-            m_canvas, SLOT(setBrushColor(QColor)));
 
     QSignalMapper *toolSignalMapper = new QSignalMapper(this);
     connect(toolSignalMapper, SIGNAL(mapped(QObject*)), SLOT(activateTool(QObject*)));
+    QList<PaintTool*> paintTools;
     foreach (PaintTool::Generator g, PaintToolRegistry::generators()) {
         PaintTool *tool = g(this);
+        paintTools << tool;
         QAction *toolAction = tool->toolAction();
-        tbr->addAction(toolAction);
+        m_tbr->addAction(toolAction);
         toolSignalMapper->setMapping(toolAction, tool);
         connect(toolAction, SIGNAL(triggered(bool)), toolSignalMapper, SLOT(map()));
     }
+    m_tbr->addSeparator();
+
+    auto toolSetupPlaceholder = new QWidget;
+    auto toolSetupPlaceholderLayout = new QHBoxLayout(toolSetupPlaceholder);
+    toolSetupPlaceholderLayout->setMargin(0);
+    foreach (PaintTool *tool, paintTools) {
+        auto *toolSetupWidget = tool->toolSetupWidget();
+        if (toolSetupWidget)
+            toolSetupPlaceholderLayout->addWidget(toolSetupWidget);
+    }
+    m_tbr->addWidget(toolSetupPlaceholder);
 
     setCentralWidget(m_canvas);
 }

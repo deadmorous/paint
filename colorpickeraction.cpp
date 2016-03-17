@@ -11,6 +11,10 @@ ColorPickerAction::ColorPickerAction(QObject *parent) :
     connect(this, SIGNAL(triggered(bool)), SLOT(pickColor()));
 }
 
+QColor ColorPickerAction::color() const {
+    return m_color;
+}
+
 void ColorPickerAction::pickColor()
 {
     QColor c = QColorDialog::getColor(Qt::white, parentWidget(), tr("Select brush color"));

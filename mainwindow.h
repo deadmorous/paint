@@ -22,6 +22,7 @@ private slots:
 private:
     Canvas *m_canvas;
     PaintTool *m_currentTool;
+    QToolBar *m_tbr;
 };
 
 #endif // MAINWINDOW_H
