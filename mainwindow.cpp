@@ -6,30 +6,26 @@
 #include <QIcon>
 #include <QAction>
 #include <QActionGroup>
-#include <QSignalMapper>
 #include <QHBoxLayout>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
-    m_canvas(new Canvas),
-    m_currentTool(nullptr)
+    m_canvas(new Canvas)
 {
     m_tbr = addToolBar(tr("Tools"));
 
     auto toolActionGroup = new QActionGroup(this);
 
-    auto toolSignalMapper = new QSignalMapper(this);
-    connect(toolSignalMapper, SIGNAL(mapped(QObject*)), SLOT(activateTool(QObject*)));
     QList<PaintTool*> paintTools;
     foreach (PaintTool::Generator g, PaintToolRegistry::generators()) {
         PaintTool *tool = g(this);
         paintTools << tool;
+        tool->setCanvas(m_canvas);
         QAction *toolAction = tool->toolAction();
         toolAction->setCheckable(true);
         m_tbr->addAction(toolAction);
         toolActionGroup->addAction(toolAction);
-        toolSignalMapper->setMapping(toolAction, tool);
-        connect(toolAction, SIGNAL(triggered(bool)), toolSignalMapper, SLOT(map()));
+        connect(toolAction, SIGNAL(toggled(bool)), tool, SLOT(setActive(bool)));
     }
     m_tbr->addSeparator();
 
@@ -44,16 +40,4 @@ MainWindow::MainWindow(QWidget *parent) :
     m_tbr->addWidget(toolSetupPlaceholder);
 
     setCentralWidget(m_canvas);
-}
-
-void MainWindow::activateTool(QObject *tool)
-{
-    if (m_currentTool) {
-        m_currentTool->deactivate();
-        m_currentTool = nullptr;
-    }
-    PaintTool *paintTool = qobject_cast<PaintTool*>(tool);
-    Q_ASSERT(paintTool);
-    paintTool->activate(m_canvas);
-    m_currentTool = paintTool;
 }

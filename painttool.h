@@ -19,17 +19,18 @@ public:
     typedef PaintTool* (*Generator)(QObject*);
     static QVector<Generator> toolGenerators();
 
+    Canvas *canvas() const;
+    bool isActive() const;
+
 signals:
 
 public slots:
-    void activate(Canvas *canvas);
-    void deactivate();
-
-protected:
-    Canvas *canvas();
+    void setCanvas(Canvas *canvas);
+    void setActive(bool active);
 
 private:
     Canvas *m_canvas;
+    bool m_active;
 };
 
 typedef Registry< PaintTool::Generator > PaintToolRegistry;

@@ -16,12 +16,8 @@ signals:
 
 public slots:
 
-private slots:
-    void activateTool(QObject *tool);
-
 private:
     Canvas *m_canvas;
-    PaintTool *m_currentTool;
     QToolBar *m_tbr;
 };
 
