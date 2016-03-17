@@ -10,7 +10,6 @@ class BrushTool : public PaintTool
 Q_OBJECT
 public:
     BrushTool(QObject *parent = NULL);
-    ~BrushTool();
 
     // PaintTool interface
     QAction *toolAction();

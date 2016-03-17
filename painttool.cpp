@@ -35,10 +35,12 @@ void PaintTool::setActive(bool active)
         m_canvas->installEventFilter(this);
         if (setupWidget)
             setupWidget->show();
+        onActivate();
     }
     else {
         m_canvas->removeEventFilter(this);
         if (setupWidget)
             setupWidget->hide();
+        onDeactivate();
     }
 }

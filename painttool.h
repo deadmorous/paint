@@ -28,6 +28,10 @@ public slots:
     void setCanvas(Canvas *canvas);
     void setActive(bool active);
 
+protected:
+    virtual void onActivate() {}
+    virtual void onDeactivate() {}
+
 private:
     Canvas *m_canvas;
     bool m_active;

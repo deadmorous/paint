@@ -1,6 +1,5 @@
 #include "brushtool.h"
 #include "canvas.h"
-#include "registry.h"
 #include "brushtoolsetupwidget.h"
 
 #include <QAction>
@@ -16,10 +15,6 @@ BrushTool::BrushTool(QObject *parent) :
     m_toolAction = new QAction(QIcon(":/pix/brush.png"), tr("Brush"), this);
     m_toolSetupWidget = new BrushToolSetupWidget;
     m_toolSetupWidget->hide();
-}
-
-BrushTool::~BrushTool() {
-    m_toolSetupWidget->deleteLater();
 }
 
 QAction *BrushTool::toolAction()

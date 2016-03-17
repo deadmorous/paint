@@ -15,9 +15,16 @@ public:
 
     DECL_PAINT_TOOL_GENERATOR(TextTool)
 
+protected:
+    void onActivate();
+    bool eventFilter(QObject *watched, QEvent *event);
+
 private:
     QAction *m_toolAction;
     QWidget *m_toolSetupWidget;
+
+    QPoint m_lastPos;
+    bool m_hasLastPos;
 };
 
 #endif // TEXTTOOL_H

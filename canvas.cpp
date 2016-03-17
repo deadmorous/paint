@@ -9,6 +9,7 @@
 Canvas::Canvas(QWidget *parent)
     : QWidget(parent)
 {
+    setFocusPolicy(Qt::StrongFocus);
 }
 
 QSize Canvas::sizeHint() const
