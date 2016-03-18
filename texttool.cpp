@@ -1,4 +1,4 @@
-#include "brushtool.h"
+#include "texttool.h"
 #include "canvas.h"
 
 #include <QAction>
@@ -6,23 +6,23 @@
 #include <QMouseEvent>
 #include <QPainter>
 
-DECL_PAINT_TOOL_REGISTRATOR(BrushTool)
+DECL_PAINT_TOOL_REGISTRATOR(TextTool)
 
-BrushTool::BrushTool(QObject *parent) : PaintTool(parent)
+TextTool::TextTool(QObject *parent) : PaintTool(parent)
 {
-    m_toolAction = new QAction(QIcon(":/pix/brush.png"), tr("Brush"), this);
+    m_toolAction = new QAction(QIcon(":/pix/text.png"), tr("Text"), this);
     m_toolSetupWidget = 0;
 }
 
-QAction *BrushTool::toolAction() {
+QAction *TextTool::toolAction() {
     return m_toolAction;
 }
 
-QWidget *BrushTool::toolSetupWidget() {
+QWidget *TextTool::toolSetupWidget() {
     return m_toolSetupWidget;
 }
 
-bool BrushTool::eventFilter(QObject* watched, QEvent *event)
+bool TextTool::eventFilter(QObject* watched, QEvent *event)
 {
     if (watched != canvas())
         return false;

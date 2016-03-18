@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/pix">
         <file alias="brush.png">res/brush.png</file>
+        <file alias="text.png">res/text.png</file>
     </qresource>
 </RCC>

@@ -18,14 +18,17 @@ SOURCES += main.cpp\
     colorpickeraction.cpp \
     canvas.cpp \
     painttool.cpp \
-    brushtool.cpp
+    brushtool.cpp \
+    texttool.cpp
 
 HEADERS  += \
     mainwindow.h \
     colorpickeraction.h \
     canvas.h \
     painttool.h \
-    brushtool.h
+    brushtool.h \
+    texttool.h \
+    registry.h
 
 RESOURCES += \
     main.qrc

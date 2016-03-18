@@ -1,20 +1,20 @@
-#ifndef BRUSHTOOL_H
-#define BRUSHTOOL_H
+#ifndef TEXTTOOL_H
+#define TEXTTOOL_H
 
 #include "painttool.h"
 #include <QPoint>
 
-class BrushTool : public PaintTool
+class TextTool : public PaintTool
 {
     Q_OBJECT
 public:
-    explicit BrushTool(QObject *parent = 0);
+    explicit TextTool(QObject *parent = 0);
 
     // PaintTool interface
     QAction *toolAction();
     QWidget *toolSetupWidget();
 
-    DECL_PAINT_TOOL_GENERATOR(BrushTool)
+    DECL_PAINT_TOOL_GENERATOR(TextTool)
 
 protected:
     bool eventFilter(QObject* watched, QEvent *event);
@@ -25,4 +25,4 @@ private:
     QPoint m_lastPos;
 };
 
-#endif // BRUSHTOOL_H
+#endif // TEXTTOOL_H
