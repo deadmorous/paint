@@ -2,6 +2,7 @@
 #define TEXTTOOL_H
 
 #include "painttool.h"
+#include <QPoint>
 
 class TextTool : public PaintTool
 {

@@ -2,6 +2,7 @@
 #define BRUSHTOOL_H
 
 #include "painttool.h"
+#include <QPoint>
 
 class BrushToolSetupWidget;
 
