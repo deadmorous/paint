@@ -12,22 +12,31 @@ public:
     explicit Canvas(QWidget *parent = 0);
     QSize sizeHint() const;
 
-    QColor brushColor() const;
-
-public slots:
-    void setBrushColor(QColor c);
-
 protected:
     void paintEvent(QPaintEvent *);
     void resizeEvent(QResizeEvent *e);
-    void mousePressEvent(QMouseEvent *e);
-    void mouseReleaseEvent(QMouseEvent *e);
-    void mouseMoveEvent(QMouseEvent *e);
 
 private:
     QPixmap m_pix;
-    QPoint m_lastPos;
-    QColor m_brushColor;
+    friend class CanvasPixmap;
+};
+
+class CanvasPixmap
+{
+public:
+    explicit CanvasPixmap(Canvas *canvas) :
+        m_canvas(canvas)
+    {}
+    ~CanvasPixmap()
+    {
+        m_canvas->update();
+    }
+    operator QPixmap*() {
+        return &m_canvas->m_pix;
+    }
+
+private:
+    Canvas *m_canvas;
 };
 
 #endif // CANVAS_H

@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/pix">
-        <file alias="f1.png">res/flower-1.png</file>
-        <file alias="f2.png">res/flower-2.png</file>
+        <file alias="brush.png">res/brush.png</file>
     </qresource>
 </RCC>

@@ -8,8 +8,7 @@
 #include <QMouseEvent>
 
 Canvas::Canvas(QWidget *parent)
-    : QWidget(parent),
-      m_brushColor(Qt::black)
+    : QWidget(parent)
 {
 
 //    QToolBar *w1 = new QToolBar;
@@ -35,16 +34,6 @@ QSize Canvas::sizeHint() const
     return QSize(600, 400);
 }
 
-QColor Canvas::brushColor() const
-{
-    return m_brushColor;
-}
-
-void Canvas::setBrushColor(QColor c)
-{
-    m_brushColor = c;
-}
-
 void Canvas::paintEvent(QPaintEvent *)
 {
     QPainter p(this);
@@ -62,25 +51,3 @@ void Canvas::resizeEvent(QResizeEvent *e)
     }
     m_pix = newPix;
 }
-
-void Canvas::mousePressEvent(QMouseEvent *e)
-{
-    m_lastPos = e->pos();
-}
-
-void Canvas::mouseReleaseEvent(QMouseEvent *e)
-{
-}
-
-void Canvas::mouseMoveEvent(QMouseEvent *e)
-{
-    QPainter p(&m_pix);
-    QPen pen(m_brushColor, 18);
-    pen.setCapStyle(Qt::RoundCap);
-    p.setPen(pen);
-    p.setRenderHint(QPainter::Antialiasing);
-    p.drawLine(m_lastPos, e->pos());
-    update();
-    m_lastPos = e->pos();
-}
-
