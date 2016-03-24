@@ -22,7 +22,9 @@ SOURCES += main.cpp\
     texttool.cpp \
     brushtoolsetupwidget.cpp \
     texttoolsetupwidget.cpp \
-    fontpickerwidget.cpp
+    fontpickerwidget.cpp \
+    brushpreviewwidget.cpp \
+    brushsizeeditorwidget.cpp
 
 HEADERS  += \
     mainwindow.h \
@@ -34,7 +36,9 @@ HEADERS  += \
     registry.h \
     brushtoolsetupwidget.h \
     texttoolsetupwidget.h \
-    fontpickerwidget.h
+    fontpickerwidget.h \
+    brushpreviewwidget.h \
+    brushsizeeditorwidget.h
 
 RESOURCES += \
     main.qrc

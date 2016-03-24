@@ -4,6 +4,7 @@
 #include <QWidget>
 
 class ColorPickerAction;
+class BrushSizeEditorWidget;
 
 class BrushToolSetupWidget : public QWidget
 {
@@ -11,6 +12,7 @@ class BrushToolSetupWidget : public QWidget
 public:
     explicit BrushToolSetupWidget(QWidget *parent = 0);
     QColor brushColor() const;
+    double brushDiameter() const;
 
 signals:
 
@@ -18,6 +20,7 @@ public slots:
 
 private:
     ColorPickerAction *m_pickColorAction;
+    BrushSizeEditorWidget *m_brushSizeEditor;
 };
 
 #endif // BRUSHTOOLSETUPWIDGET_H

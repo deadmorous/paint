@@ -41,7 +41,7 @@ bool BrushTool::eventFilter(QObject *watched, QEvent *event)
         QMouseEvent *mouseEvent = static_cast<QMouseEvent*>(event);
         CanvasPixmap cpix(canvas());
         QPainter p(cpix);
-        QPen pen(m_toolSetupWidget->brushColor(), 18);
+        QPen pen(m_toolSetupWidget->brushColor(), m_toolSetupWidget->brushDiameter());
         pen.setCapStyle(Qt::RoundCap);
         p.setPen(pen);
         p.setRenderHint(QPainter::Antialiasing);
@@ -49,6 +49,8 @@ bool BrushTool::eventFilter(QObject *watched, QEvent *event)
         m_lastPos = mouseEvent->pos();
         break;
     }
+    default:
+        break;
     }
     return false;
 }
