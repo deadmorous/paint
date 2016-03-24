@@ -1,5 +1,6 @@
 #include "texttool.h"
 #include "canvas.h"
+#include "texttoolsetupwidget.h"
 
 #include <QAction>
 #include <QIcon>
@@ -14,7 +15,8 @@ TextTool::TextTool(QObject *parent) :
     m_hasLastPos(false)
 {
     m_toolAction = new QAction(QIcon(":/pix/text.png"), tr("Brush"), this);
-    m_toolSetupWidget = nullptr;
+    m_toolSetupWidget = new TextToolSetupWidget;
+    m_toolSetupWidget->hide();
 }
 
 QAction *TextTool::toolAction()
@@ -48,12 +50,16 @@ bool TextTool::eventFilter(QObject *watched, QEvent *event)
         auto keyEvent = static_cast<QKeyEvent*>(event);
         CanvasPixmap cpix(canvas());
         QPainter p(cpix);
+        p.setPen(m_toolSetupWidget->textColor());
+        p.setFont(m_toolSetupWidget->textFont());
         QString text = keyEvent->text();
         p.drawText(m_lastPos, text);
         int BigSize = 1000;
         m_lastPos.rx() += p.boundingRect(QRectF(0, 0, BigSize, BigSize), text).width();
         break;
     }
+    default:
+        break;
     }
     return false;
 }

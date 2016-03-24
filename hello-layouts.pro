@@ -20,7 +20,9 @@ SOURCES += main.cpp\
     painttool.cpp \
     brushtool.cpp \
     texttool.cpp \
-    brushtoolsetupwidget.cpp
+    brushtoolsetupwidget.cpp \
+    texttoolsetupwidget.cpp \
+    fontpickerwidget.cpp
 
 HEADERS  += \
     mainwindow.h \
@@ -30,7 +32,9 @@ HEADERS  += \
     brushtool.h \
     texttool.h \
     registry.h \
-    brushtoolsetupwidget.h
+    brushtoolsetupwidget.h \
+    texttoolsetupwidget.h \
+    fontpickerwidget.h
 
 RESOURCES += \
     main.qrc
