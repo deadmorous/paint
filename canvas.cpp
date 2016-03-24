@@ -1,10 +1,9 @@
 #include "canvas.h"
 
-//#include <QVBoxLayout>
-//#include <QHBoxLayout>
 #include <QLabel>
 #include <QPainter>
 #include <QResizeEvent>
+#include <QMessageBox>
 
 Canvas::Canvas(QWidget *parent)
     : QWidget(parent)
@@ -33,4 +32,17 @@ void Canvas::resizeEvent(QResizeEvent *e)
             p.drawPixmap(0, 0, m_pix);
     }
     m_pix = newPix;
+}
+
+void Canvas::loadImage(const QString& fileName)
+{
+    if (!m_pix.load(fileName))
+        QMessageBox::critical(this, QString(), tr("Unable to load picture from file %1").arg(fileName));
+    update();
+}
+
+void Canvas::saveImage(const QString& fileName)
+{
+    if (!m_pix.save(fileName))
+        QMessageBox::critical(this, QString(), tr("Unable to save picture to file %1").arg(fileName));
 }

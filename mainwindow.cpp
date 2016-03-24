@@ -7,6 +7,9 @@
 #include <QAction>
 #include <QActionGroup>
 #include <QHBoxLayout>
+#include <QMenuBar>
+#include <QMenu>
+#include <QFileDialog>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -39,5 +42,60 @@ MainWindow::MainWindow(QWidget *parent) :
     }
     m_tbr->addWidget(toolSetupPlaceholder);
 
+    QMenuBar *mainMenu = menuBar();
+    QMenu *fileMenu = mainMenu->addMenu(tr("&File"));
+
+    QAction *a;
+
+    a = new QAction(tr("&Open"), this);
+    a->setShortcut(QKeySequence::Open);
+    fileMenu->addAction(a);
+    connect(a, SIGNAL(triggered(bool)), SLOT(open()));
+
+    a = new QAction(tr("&Save"), this);
+    a->setShortcut(QKeySequence::Save);
+    fileMenu->addAction(a);
+    connect(a, SIGNAL(triggered(bool)), SLOT(save()));
+
+    a = new QAction(tr("Save as"), this);
+    a->setShortcut(QKeySequence::SaveAs);
+    fileMenu->addAction(a);
+    connect(a, SIGNAL(triggered(bool)), SLOT(saveAs()));
+
+    fileMenu->addSeparator();
+
+    a = new QAction(tr("&Quit"), this);
+    a->setShortcut(QKeySequence::Quit);
+    fileMenu->addAction(a);
+    connect(a, SIGNAL(triggered(bool)), SLOT(close()));
+
     setCentralWidget(m_canvas);
+}
+
+void MainWindow::open()
+{
+    QString fileName = QFileDialog::getOpenFileName(this, tr("Open picture"), m_fileName, "Images (*.png *.jpg);;All files (*)" );
+    if (fileName.isEmpty())
+        return;
+    m_canvas->loadImage(fileName);
+    m_fileName = fileName;
+    setWindowTitle(fileName);
+}
+
+void MainWindow::save()
+{
+    if (m_fileName.isEmpty())
+        saveAs();
+    else
+        m_canvas->saveImage(m_fileName);
+}
+
+void MainWindow::saveAs()
+{
+    QString fileName = QFileDialog::getSaveFileName(this, tr("Save picture as"), m_fileName, "Images (*.png *.jpg);;All files (*)" );
+    if (fileName.isEmpty())
+        return;
+    m_canvas->saveImage(fileName);
+    m_fileName = fileName;
+    setWindowTitle(fileName);
 }

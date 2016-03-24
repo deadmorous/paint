@@ -12,6 +12,9 @@ public:
     explicit Canvas(QWidget *parent = 0);
     QSize sizeHint() const;
 
+    void loadImage(const QString& fileName);
+    void saveImage(const QString& fileName);
+
 protected:
     void paintEvent(QPaintEvent *);
     void resizeEvent(QResizeEvent *e);

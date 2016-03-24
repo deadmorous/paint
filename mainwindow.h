@@ -16,9 +16,15 @@ signals:
 
 public slots:
 
+private slots:
+    void open();
+    void save();
+    void saveAs();
+
 private:
     Canvas *m_canvas;
     QToolBar *m_tbr;
+    QString m_fileName;
 };
 
 #endif // MAINWINDOW_H
