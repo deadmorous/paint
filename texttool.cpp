@@ -1,9 +1,11 @@
 #include "texttool.h"
 #include "canvas.h"
+#include "texttoolsetup.h"
 
 #include <QAction>
 #include <QIcon>
 #include <QMouseEvent>
+#include <QKeyEvent>
 #include <QPainter>
 
 DECL_PAINT_TOOL_REGISTRATOR(TextTool)
@@ -11,7 +13,7 @@ DECL_PAINT_TOOL_REGISTRATOR(TextTool)
 TextTool::TextTool(QObject *parent) : PaintTool(parent)
 {
     m_toolAction = new QAction(QIcon(":/pix/text.png"), tr("Text"), this);
-    m_toolSetupWidget = 0;
+    m_toolSetupWidget = new TextToolSetup;
 }
 
 QAction *TextTool::toolAction() {
@@ -34,19 +36,21 @@ bool TextTool::eventFilter(QObject* watched, QEvent *event)
         m_lastPos = mouseEvent->pos();
         break;
     }
-    case QEvent::MouseMove:
+    case QEvent::KeyPress:
     {
-        auto mouseEvent = static_cast<QMouseEvent *>(event);
+        auto keyEvent = static_cast<QKeyEvent*>(event);
         CanvasPixmap pix(canvas());
         QPainter p(pix);
-        QPen pen(Qt::black, 18);
-        pen.setCapStyle(Qt::RoundCap);
-        p.setPen(pen);
-        p.setRenderHint(QPainter::Antialiasing);
-        p.drawLine(m_lastPos, mouseEvent->pos());
-        m_lastPos = mouseEvent->pos();
+        p.setPen(m_toolSetupWidget->textColor());
+        p.drawText(m_lastPos, keyEvent->text());
+        const int Large = 1000;
+        m_lastPos.rx() +=
+                p.boundingRect(QRect(0,0,Large, Large),
+                               keyEvent->text()).width();
         break;
     }
+    default:
+        break;
     }
     return false;
 }

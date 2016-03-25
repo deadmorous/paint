@@ -19,7 +19,11 @@ SOURCES += main.cpp\
     canvas.cpp \
     painttool.cpp \
     brushtool.cpp \
-    texttool.cpp
+    texttool.cpp \
+    brushtoolsetup.cpp \
+    brushpreview.cpp \
+    brushsizeeditor.cpp \
+    texttoolsetup.cpp
 
 HEADERS  += \
     mainwindow.h \
@@ -28,7 +32,11 @@ HEADERS  += \
     painttool.h \
     brushtool.h \
     texttool.h \
-    registry.h
+    registry.h \
+    brushtoolsetup.h \
+    brushpreview.h \
+    brushsizeeditor.h \
+    texttoolsetup.h
 
 RESOURCES += \
     main.qrc

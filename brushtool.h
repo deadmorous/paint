@@ -4,6 +4,8 @@
 #include "painttool.h"
 #include <QPoint>
 
+class BrushToolSetup;
+
 class BrushTool : public PaintTool
 {
     Q_OBJECT
@@ -21,7 +23,7 @@ protected:
 
 private:
     QAction *m_toolAction;
-    QWidget *m_toolSetupWidget;
+    BrushToolSetup *m_toolSetupWidget;
     QPoint m_lastPos;
 };
 

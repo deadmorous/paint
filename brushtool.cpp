@@ -1,5 +1,6 @@
 #include "brushtool.h"
 #include "canvas.h"
+#include "brushtoolsetup.h"
 
 #include <QAction>
 #include <QIcon>
@@ -11,7 +12,7 @@ DECL_PAINT_TOOL_REGISTRATOR(BrushTool)
 BrushTool::BrushTool(QObject *parent) : PaintTool(parent)
 {
     m_toolAction = new QAction(QIcon(":/pix/brush.png"), tr("Brush"), this);
-    m_toolSetupWidget = 0;
+    m_toolSetupWidget = new BrushToolSetup;
 }
 
 QAction *BrushTool::toolAction() {
@@ -39,7 +40,8 @@ bool BrushTool::eventFilter(QObject* watched, QEvent *event)
         auto mouseEvent = static_cast<QMouseEvent *>(event);
         CanvasPixmap pix(canvas());
         QPainter p(pix);
-        QPen pen(Qt::black, 18);
+        QPen pen(m_toolSetupWidget->brushColor(),
+                 m_toolSetupWidget->brushDiameter());
         pen.setCapStyle(Qt::RoundCap);
         p.setPen(pen);
         p.setRenderHint(QPainter::Antialiasing);
@@ -47,6 +49,8 @@ bool BrushTool::eventFilter(QObject* watched, QEvent *event)
         m_lastPos = mouseEvent->pos();
         break;
     }
+    default:
+        break;
     }
     return false;
 }
