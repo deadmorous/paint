@@ -20,14 +20,19 @@ public:
 
 protected:
     void onActivate();
+    void onDeactivate();
     bool eventFilter(QObject *watched, QEvent *event);
+    void timerEvent(QTimerEvent *event);
 
 private:
+    int m_eventFileterRecursionDepth;
     QAction *m_toolAction;
     TextToolSetupWidget *m_toolSetupWidget;
 
     QPoint m_lastPos;
     bool m_hasLastPos;
+    bool m_cursorVisible;
+    int m_timerId;
 };
 
 #endif // TEXTTOOL_H

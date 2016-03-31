@@ -42,7 +42,8 @@ HEADERS  += \
     brushpreviewwidget.h \
     brushsizeeditorwidget.h \
     fontpickerwidget2.h \
-    fontlistmodel.h
+    fontlistmodel.h \
+    scopedinc.h
 
 RESOURCES += \
     main.qrc
