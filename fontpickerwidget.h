@@ -8,7 +8,7 @@ class FontPickerWidget : public QWidget
     Q_OBJECT
 public:
     explicit FontPickerWidget(QWidget *parent = 0);
-    QFont font() const;
+    QFont selectedFont() const;
 
 signals:
 

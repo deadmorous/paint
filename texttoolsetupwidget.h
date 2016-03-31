@@ -4,7 +4,7 @@
 #include <QWidget>
 
 class ColorPickerAction;
-class FontPickerWidget;
+class FontPickerWidget2;
 
 class TextToolSetupWidget : public QWidget
 {
@@ -20,7 +20,7 @@ public slots:
 
 private:
     ColorPickerAction *m_pickColorAction;
-    FontPickerWidget *m_fontPickerWidget;
+    FontPickerWidget2 *m_fontPickerWidget;
 };
 
 #endif // TEXTTOOLSETUPWIDGET_H

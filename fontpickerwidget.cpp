@@ -9,7 +9,7 @@ FontPickerWidget::FontPickerWidget(QWidget *parent) : QWidget(parent)
     setMinimumSize(150, 20);
 }
 
-QFont FontPickerWidget::font() const
+QFont FontPickerWidget::selectedFont() const
 {
     return m_font;
 }

@@ -24,7 +24,9 @@ SOURCES += main.cpp\
     texttoolsetupwidget.cpp \
     fontpickerwidget.cpp \
     brushpreviewwidget.cpp \
-    brushsizeeditorwidget.cpp
+    brushsizeeditorwidget.cpp \
+    fontpickerwidget2.cpp \
+    fontlistmodel.cpp
 
 HEADERS  += \
     mainwindow.h \
@@ -38,7 +40,9 @@ HEADERS  += \
     texttoolsetupwidget.h \
     fontpickerwidget.h \
     brushpreviewwidget.h \
-    brushsizeeditorwidget.h
+    brushsizeeditorwidget.h \
+    fontpickerwidget2.h \
+    fontlistmodel.h
 
 RESOURCES += \
     main.qrc

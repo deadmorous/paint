@@ -3,7 +3,7 @@
 #include <QToolBar>
 #include <QHBoxLayout>
 #include "colorpickeraction.h"
-#include "fontpickerwidget.h"
+#include "fontpickerwidget2.h"
 
 TextToolSetupWidget::TextToolSetupWidget(QWidget *parent) : QWidget(parent)
 {
@@ -15,7 +15,7 @@ TextToolSetupWidget::TextToolSetupWidget(QWidget *parent) : QWidget(parent)
     m_pickColorAction = new ColorPickerAction(this);
     tbr->addAction(m_pickColorAction);
 
-    tbr->addWidget(m_fontPickerWidget = new FontPickerWidget);
+    tbr->addWidget(m_fontPickerWidget = new FontPickerWidget2);
 }
 
 QColor TextToolSetupWidget::textColor() const
@@ -25,5 +25,5 @@ QColor TextToolSetupWidget::textColor() const
 
 QFont TextToolSetupWidget::textFont() const
 {
-    return m_fontPickerWidget->font();
+    return m_fontPickerWidget->selectedFont();
 }
