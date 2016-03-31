@@ -13,6 +13,7 @@ BrushTool::BrushTool(QObject *parent) :
     PaintTool(parent)
 {
     m_toolAction = new QAction(QIcon(":/pix/brush.png"), tr("Brush"), this);
+    m_toolAction->setShortcut(Qt::Key_F1);
     m_toolSetupWidget = new BrushToolSetupWidget;
     m_toolSetupWidget->hide();
 }

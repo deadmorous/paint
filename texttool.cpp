@@ -15,6 +15,7 @@ TextTool::TextTool(QObject *parent) :
     m_hasLastPos(false)
 {
     m_toolAction = new QAction(QIcon(":/pix/text.png"), tr("Brush"), this);
+    m_toolAction->setShortcut(Qt::Key_F2);
     m_toolSetupWidget = new TextToolSetupWidget;
     m_toolSetupWidget->hide();
 }
