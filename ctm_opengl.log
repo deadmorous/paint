@@ -1,0 +1,176 @@
+Пт. 01 апр. 2016 10:46:52; clock: 0x66DB47C4; ------ LOG file opened ------
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/ctm_shared/modules/ctm_qt_v2d/src/v2d_qt_view_visual2d_v1.cpp:453, QOpenGLContext::create() succeeded
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/ctm_shared/modules/ctm_qt_v2d/src/v2d_qt_view_visual2d_v1.cpp:456, OpenGLFunctions::initializeOpenGLFunctions() returned 1
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimStructSceneLayer.cpp:440, OpenGLFunctions::initializeOpenGLFunctions() returned 1
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB47C4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB47C7; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader VsPassThrough
+clock: 0x66DB47C7; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader FsTextureColor
+clock: 0x66DB47C7; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:201, QOpenGLShaderProgram::addShader() returned 1, vertex shader 0
+clock: 0x66DB47C7; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:206, QOpenGLShaderProgram::addShader() returned 1, fragment shader 2
+clock: 0x66DB47C7; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:211, QOpenGLShaderProgram::link() returned 1
+clock: 0x66DB4CC0; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimStructSceneLayer.cpp:440, OpenGLFunctions::initializeOpenGLFunctions() returned 1
+clock: 0x66DB4CC0; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC0; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC0; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC0; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC0; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC0; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC0; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC0; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:30, QOpenGLBuffer::create() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:34, QOpenGLBuffer::bind() returned 1, vertex buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:148, QOpenGLBuffer::create() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:152, QOpenGLBuffer::bind() returned 1, index buffer
+clock: 0x66DB4CC2; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader VsPassThrough
+clock: 0x66DB4CC3; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader FsTextureColor
+clock: 0x66DB4CC3; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:201, QOpenGLShaderProgram::addShader() returned 1, vertex shader 0
+clock: 0x66DB4CC3; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:206, QOpenGLShaderProgram::addShader() returned 1, fragment shader 2
+clock: 0x66DB4CC3; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:211, QOpenGLShaderProgram::link() returned 1
+clock: 0x66DB4CC3; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader VsMvpDeformableTube
+clock: 0x66DB4CC3; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader FsLighting
+clock: 0x66DB4CC3; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:201, QOpenGLShaderProgram::addShader() returned 1, vertex shader 3
+clock: 0x66DB4CC3; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:206, QOpenGLShaderProgram::addShader() returned 1, fragment shader 3
+clock: 0x66DB4CC4; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:211, QOpenGLShaderProgram::link() returned 1
+clock: 0x66DB4CC5; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader VsMvpDeformableStrip
+clock: 0x66DB4CC6; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader FsLighting
+clock: 0x66DB4CC6; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:201, QOpenGLShaderProgram::addShader() returned 1, vertex shader 4
+clock: 0x66DB4CC6; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:206, QOpenGLShaderProgram::addShader() returned 1, fragment shader 3
+clock: 0x66DB4CC7; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:211, QOpenGLShaderProgram::link() returned 1
+clock: 0x66DB4CC9; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader VsMvpRigidBody
+clock: 0x66DB4CC9; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader FsLighting
+clock: 0x66DB4CC9; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:201, QOpenGLShaderProgram::addShader() returned 1, vertex shader 1
+clock: 0x66DB4CC9; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:206, QOpenGLShaderProgram::addShader() returned 1, fragment shader 3
+clock: 0x66DB4CCA; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:211, QOpenGLShaderProgram::link() returned 1
+clock: 0x66DB4CCA; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader VsMvpDeformableTube
+clock: 0x66DB4CCB; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader FsLightingTextureReplaceDiffuse
+clock: 0x66DB4CCB; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:201, QOpenGLShaderProgram::addShader() returned 1, vertex shader 3
+clock: 0x66DB4CCB; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:206, QOpenGLShaderProgram::addShader() returned 1, fragment shader 5
+clock: 0x66DB4CCC; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:211, QOpenGLShaderProgram::link() returned 1
+clock: 0x66DB4CCC; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader VsMvpRigidBody
+clock: 0x66DB4CCC; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:295, QOpenGLShader::compileSourceCode() returned 1, shader FsLightingTextureReplaceDiffuse
+clock: 0x66DB4CCC; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:201, QOpenGLShaderProgram::addShader() returned 1, vertex shader 1
+clock: 0x66DB4CCC; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:206, QOpenGLShaderProgram::addShader() returned 1, fragment shader 5
+clock: 0x66DB4CCD; /home/stepanastyk/ctmdev/luk/modules/sim_dyn_ogl/src/SimDynOglVisualizerContext.cpp:211, QOpenGLShaderProgram::link() returned 1

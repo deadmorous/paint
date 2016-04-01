@@ -25,6 +25,7 @@ private:
     QAction *m_toolAction;
     TextToolSetup *m_toolSetupWidget;
     QPoint m_lastPos;
+    int m_efCounter;
 };
 
 #endif // TEXTTOOL_H

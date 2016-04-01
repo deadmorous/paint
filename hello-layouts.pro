@@ -23,7 +23,9 @@ SOURCES += main.cpp\
     brushtoolsetup.cpp \
     brushpreview.cpp \
     brushsizeeditor.cpp \
-    texttoolsetup.cpp
+    texttoolsetup.cpp \
+    fontpicker.cpp \
+    fontfamilymodel.cpp
 
 HEADERS  += \
     mainwindow.h \
@@ -36,7 +38,10 @@ HEADERS  += \
     brushtoolsetup.h \
     brushpreview.h \
     brushsizeeditor.h \
-    texttoolsetup.h
+    texttoolsetup.h \
+    fontpicker.h \
+    fontfamilymodel.h \
+    scopedinc.h
 
 RESOURCES += \
     main.qrc

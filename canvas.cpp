@@ -15,7 +15,7 @@ Canvas::Canvas(QWidget *parent)
 
 QSize Canvas::sizeHint() const
 {
-    return QSize(600, 400);
+    return QSize(800, 400);
 }
 
 void Canvas::paintEvent(QPaintEvent *)
